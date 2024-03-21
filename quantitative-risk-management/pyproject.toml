@@ -1,0 +1,28 @@
+[project]
+name = "qrmmodels"
+authors = [
+    {name = "Pieter Pel", email = "contact@pieterpel.com"},
+    {name = "Jannilo Tempel", email = "jannilo@hotmail.nl"},
+]
+description = "Package used for quantitative risk modelling"
+readme = "README.md"
+requires-python = ">=3"
+keywords = ["risk", "evt", "quantitative", "econometrics"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependencies]
+numpy = "*"
+pandas = "*"
+openpyxl = "*"
+scipy = "*"
+arch = "*"
+statsmodels = "*"
+matplotlib = "*"
+scikit-learn = "*"
